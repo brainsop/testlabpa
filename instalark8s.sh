@@ -66,6 +66,7 @@ then
   sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 
   #guardar output para worker nodes
+  #TODO: guardar output y dejarlo en un file para poder armar el comando de ejecucion en el worker node
   read -rsp $'Guardar SALIDA del MASTER (dos lineas anteriores) y presionar Enter ...\n'
 
   mkdir -p $HOME/.kube
